@@ -9,7 +9,7 @@ def solution(x_success: int,
              y_success: int, 
              y_cnt: int) -> bool:
     sample1=x_success/x_cnt
-    sample1=y_success/y_cnt
+    sample2=y_success/y_cnt
     alpha = 0.06
     t_stat, p_value = ttest_ind(sample1, sample2)
     if p_value <= alpha:
